@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Affinity674 的字母头像">
+  <rect width="512" height="512" fill="#eee6d6"/>
+  <circle cx="388" cy="122" r="92" fill="#9f4b33"/>
+  <circle cx="388" cy="122" r="112" fill="none" stroke="#9f4b33" stroke-width="1" opacity=".5"/>
+  <circle cx="256" cy="264" r="172" fill="none" stroke="#31594a" stroke-width="1" opacity=".16"/>
+  <path d="M0 402c79-33 145-24 224-50 78-26 141-4 204-22 31-9 59-12 84-8v190H0Z" fill="#31594a" opacity=".12"/>
+  <path d="M0 447c82-26 151-19 231-43 78-24 139-5 201-19 32-7 59-6 80-1v128H0Z" fill="#31594a" opacity=".2"/>
+  <path d="M0 486c86-22 153-16 233-36 76-19 137-5 198-14 34-5 61-3 81 1v75H0Z" fill="#31594a"/>
+  <text x="252" y="393" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="372" fill="#202923">A</text>
+  <text x="38" y="56" font-family="-apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="12" letter-spacing="4" fill="#4b5a50">AFFINITY674</text>
+  <text x="38" y="487" font-family="-apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="10" letter-spacing="3" fill="#eee6d6" opacity=".8">PERSONAL NOTEBOOK</text>
+</svg>
+

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<div class="page tags-page">
+  <header class="page-header shell">
+    <p class="eyebrow">TAGS</p>
+    <h1>写过的关键词</h1>
+    <p class="page-header__lead">
+      一些反复出现的词，像散落在时间里的路标。
+    </p>
+  </header>
+
+  <div class="shell">
+    {% assign tags = site.tags | sort %}
+    <div class="tag-cloud tag-cloud--large">
+      {% for tag in tags %}
+        <a class="tag-chip tag-chip--large" href="#tag-{{ forloop.index }}">
+          # {{ tag[0] }} <span>{{ tag[1].size }}</span>
+        </a>
+      {% endfor %}
+    </div>
+
+    <div class="tag-sections">
+      {% for tag in tags %}
+        <section class="tag-section" id="tag-{{ forloop.index }}">
+          <header class="tag-section__head">
+            <h2><span aria-hidden="true">#</span> {{ tag[0] }}</h2>
+            <span>{{ tag[1].size }} 篇</span>
+          </header>
+          <ol class="tag-post-list">
+            {% for post in tag[1] %}
+              <li>
+                <a href="{{ post.url | relative_url }}">
+                  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+                  <span>{{ post.title }}</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ol>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+</div>

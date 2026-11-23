@@ -1,0 +1,83 @@
+# ============================================================
+#  Affinity674 的个人博客 · 站点总配置
+#  改完这里，提交到 GitHub，等 1～2 分钟就会自动更新。
+# ============================================================
+
+# 浏览器标签、页头、页脚显示的名字
+title: "Affinity674"
+tagline: "把心里的声音，留在这里"
+description: "Affinity674 的个人博客。写一些生活、阅读与思考，也收藏那些不想让它们无声无息过去的时刻。"
+
+# GitHub Pages 的网址（不要加最后的斜杠）
+url: "https://affinity674.github.io"
+baseurl: ""
+
+lang: zh-CN
+timezone: Asia/Shanghai
+
+# 作者信息：会出现在文章页和「关于」页
+author:
+  name: "Affinity674"
+  bio: "一个普通人，正在练习把日子过得具体一点。"
+  avatar: "/assets/images/avatar.svg"
+  github: "https://github.com/Affinity674"
+
+# 社交资料（给搜索引擎看）
+social:
+  name: "Affinity674"
+  links:
+    - "https://github.com/Affinity674"
+
+# 顶部导航
+nav:
+  - title: "首页"
+    url: "/"
+  - title: "文章"
+    url: "/archive/"
+  - title: "标签"
+    url: "/tags/"
+  - title: "关于"
+    url: "/about/"
+  - title: "搜索"
+    url: "/search/"
+
+# 让 GitHub Pages 自动生成 RSS 和站点地图
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+feed:
+  path: "feed.xml"
+
+# 文章网址格式：/2026/11/23/first-note/
+permalink: "/:year/:month/:day/:title/"
+
+markdown: kramdown
+highlighter: rouge
+future: false
+
+# 默认版式：_posts 里的文章都用 post 版式
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      image: "/assets/images/og.png"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      image: "/assets/images/og.png"
+
+# 这些文件只放在仓库里，不会被发布成网页
+exclude:
+  - "README.md"
+  - "使用指南.md"
+  - "写作模板.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor"
+  - ".github"

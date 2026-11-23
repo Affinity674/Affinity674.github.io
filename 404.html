@@ -1,0 +1,21 @@
+---
+layout: default
+permalink: /404.html
+title: "找不到这一页"
+noindex: true
+sitemap: false
+---
+
+<div class="not-found shell">
+  <p class="eyebrow">404 / LOST</p>
+  <div class="not-found__code" aria-hidden="true">4<span>0</span>4</div>
+  <h1>这一页，暂时不存在。</h1>
+  <p class="not-found__lead">
+    也许是链接写错了，也许是它还没有被写出来。<br>
+    不如回到有文字的地方。
+  </p>
+  <div class="not-found__actions">
+    <a class="button button--primary" href="{{ '/' | relative_url }}">回到首页</a>
+    <a class="button button--ghost" href="{{ '/archive/' | relative_url }}">看看全部文章</a>
+  </div>
+</div>

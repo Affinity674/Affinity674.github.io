@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://affinity674.github.io/sitemap.xml

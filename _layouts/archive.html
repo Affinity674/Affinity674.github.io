@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="page archive-page">
+  <header class="page-header shell">
+    <p class="eyebrow">ARCHIVE</p>
+    <h1>全部文章</h1>
+    <p class="page-header__lead">
+      按时间收好每一次认真写下的时刻。目前共有 {{ site.posts.size }} 篇。
+    </p>
+  </header>
+
+  <div class="archive shell">
+    {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+    {% for year in posts_by_year %}
+      <section class="archive-year">
+        <header class="archive-year__head">
+          <h2>{{ year.name }}</h2>
+          <span>{{ year.items.size }} 篇</span>
+        </header>
+
+        <ol class="archive-list">
+          {% for post in year.items %}
+            <li>
+              <a href="{{ post.url | relative_url }}">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m.%d" }}</time>
+                <span class="archive-list__title">{{ post.title }}</span>
+                <span class="archive-list__arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ol>
+      </section>
+    {% endfor %}
+  </div>
+</div>
