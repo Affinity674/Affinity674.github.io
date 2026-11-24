@@ -5,8 +5,8 @@
 
 # 浏览器标签、页头、页脚显示的名字
 title: "Affinity674"
-tagline: "把心里的声音，留在这里"
-description: "Affinity674 的个人博客。写一些生活、阅读与思考，也收藏那些不想让它们无声无息过去的时刻。"
+tagline: "这里有独属于内心的声音"
+description: "Affinity674 的个人博客。由deepseek小姐辅助搭建网站框架。在AI盛行的时代，用键盘敲出属于自己的生活思考。"
 
 # GitHub Pages 的网址（不要加最后的斜杠）
 url: "https://affinity674.github.io"
@@ -18,7 +18,7 @@ timezone: Asia/Shanghai
 # 作者信息：会出现在文章页和「关于」页
 author:
   name: "Affinity674"
-  bio: "一个普通人，正在练习把日子过得具体一点。"
+  bio: "一个迷茫的普通人，正在尝试一些没干过的事，也在尝试让生活更快乐。"
   avatar: "/assets/images/avatar.svg"
   github: "https://github.com/Affinity674"
 
