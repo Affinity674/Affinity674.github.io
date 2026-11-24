@@ -43,12 +43,10 @@ nav:
 
 # 让 GitHub Pages 自动生成 RSS 和站点地图
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-feed:
-  path: "feed.xml"
+
 
 # 文章网址格式：/2026/11/23/first-note/
 permalink: "/:year/:month/:day/:title/"
